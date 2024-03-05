@@ -1,32 +1,69 @@
-* { 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-body { 
-    background-color: #F5F5F5;
+body {
+    background-color: lightgray;
 }
 
-.header { 
-    padding: 20px 20px 20px 0px;
-    text-align: 50px;
-    background-color: #DCDCDC;
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+}
+
+.header h1 {
+    display: inline;
+    padding-left: 20px;
+}
+
+.header nav ul li {
+    display: inline;
+    padding: 15px;
+    float: inline-end;
+}
+
+nav ul a {
+    text-decoration: none;
     color: black;
 }
 
-.header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-size: 20px;
+.about-me {
+    display: flex;
 }
 
-.header h1 { 
+.about-me h2 {
+    padding: 10% 0% 10% 0%;
+    border-right: 5px solid;
+    width: 25%;
+    margin-bottom: 0px;
+}
+
+div p {
+padding: 30px;
+height: 100%;
+}
+
+.work h2 {
+    padding: 10% 0% 10% 0%;
+    border-right: 5px solid;
+    width: 25%;
+    margin-bottom: 0px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+}
+
+.Contact-me h2 {
     display: inline;
-    font-size: 45px;
-    background-color: #F5F5F5;
+    padding-left: 20px;
 }
 
-.header div ul li { 
-    display: inline-block;
-    margin-left: 25px;
+.Contact-me ul li {
+    display: inline;
+    padding: 15px;
+    float: inline-end;
 }

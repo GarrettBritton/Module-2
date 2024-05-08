@@ -66,16 +66,24 @@ div p {
     margin-bottom: 20px;
 }
 
+.profile {
+    width: auto;
+    height: auto;
+    margin: 15px;
+    float: left;
+}
+
 .column {
     position: relative;
     float: left;
-    width: 33.33%; /* Adjust column width */
-    padding: 5px; /* Adjust spacing between columns */
-    box-sizing: border-box; /* Include padding in width calculation */
+    width: 33.33%;
+    padding: 5px; 
+    box-sizing: border-box; 
 }
 
 .larger {
-    width: 80%;
+    width: 100%;
+    padding: 50px 5px 5px 5px;
 }
 
 .row::after {
@@ -84,24 +92,24 @@ div p {
     display: table;
 }
 
-.image-container {
+.container {
     position: relative;
 }
 
-img {
+.work img {
     width: 100%;
-    display: block; /* Prevents extra space below images */
+    display: block; 
     border: 5px solid blue;
 }
 
-img:hover {
+.work img:hover {
     border-color: aqua;
 }
 
 .image-text {
     position: absolute;
     font-size: large;
-    bottom: 10px; /* Adjust vertical position of text */
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     background-color: blue;
@@ -112,24 +120,36 @@ img:hover {
 
 /* Footer Styles */
 footer {
-    background-color: #333; 
+    background-color: #333;
     color: white;
     padding: 20px;
     display: flex;
+    justify-content: space-between; /* Align items at the start and end */
 }
 
-footer .Contact-me {
-    text-align: right;
+.Contact-me h2,
+.Contact-me ul {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.Contact-me h2 {
+    display: inline; /* Make the h2 inline */
+    margin-right: 20px; /* Add spacing between h2 and ul */
 }
 
 .Contact-me ul {
     list-style-type: none;
-    text-align: right;
+    display: inline; /* Make the ul inline */
 }
 
 .Contact-me ul li {
-    display: inline-block; 
+    display: inline-block;
     margin-left: 20px;
+}
+
+.Contact-me ul li:first-child {
+    margin-left: 0; /* Remove left margin from the first list item */
 }
 
 .Contact-me ul li a {
@@ -152,5 +172,9 @@ footer .Contact-me {
     img {
         flex-flow: column wrap;
         text-align: center;
+    }
+
+    .image-text {
+        font-size: small;
     }
   }
